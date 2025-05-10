@@ -1,6 +1,4 @@
-# TurfApplicationProject
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Check on the Live Server :  https://chennaiturf-4b4e6.web.app/
 
 ## Development server
 
