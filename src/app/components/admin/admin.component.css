@@ -1,0 +1,71 @@
+.bgsuccess{
+    background-color:rgb(112, 226, 248);
+}
+
+.bginfo{
+    background-color:rgb(249, 199, 108); 
+}
+
+.bgwarning{
+    background-color:rgb(110, 239, 136); 
+}
+
+.bghappy{
+    background-color:rgb(198, 163, 255);  
+}
+
+.thead{
+    background-color:rgb(239, 232, 249)!important;  
+    color:black;
+    font-size:16px;
+    font-weight:500;
+    padding:0 5px;
+}
+
+mat-label{
+    font-size: 24px;
+    font-weight:500;
+    color:rgb(31, 30, 30);
+}
+
+
+.card-row {
+    display:flex;
+    flex-direction:row;
+    gap:3rem;
+    margin: 1rem 0;
+}
+
+.card{
+   width: 25rem;
+   height:5rem;
+}
+
+.fs-1{
+    font-size:40px;
+    font-weight:400;
+    margin: 1rem 0;
+}
+
+.fs-5{
+    font-size:18px;
+    font-weight:400;
+    margin: 1rem 0;
+}
+
+table{
+    width:90%;
+    margin:1rem 0;
+   
+   
+}
+
+.table-row, .dashboard{
+    
+    padding:24px;
+}
+
+mat-paginator{
+    width:90%;
+    margin:0;
+}

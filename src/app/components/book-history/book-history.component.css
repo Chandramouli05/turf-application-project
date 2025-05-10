@@ -1,0 +1,52 @@
+/* .container{
+    background-color:rgb(227, 227, 227);
+    height: 93vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+} */
+
+.card{
+    width:75%;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.header{
+    display:flex;
+   
+    padding:1rem;
+    align-items:start;
+
+}
+
+.greet{
+    font-size: 24px;
+    font-weight:400;
+  }
+
+  .card-container{
+    display:flex;
+    justify-content:center;
+  }
+
+  .turfName{
+    font-size: 20px;
+    font-weight:500;
+    color:rgb(35, 149, 67)
+  }
+
+  .book-contents{
+    font-size: 16px;
+    font-weight:500;
+    margin:1rem,0;
+  }
+
+  .location{
+    font-size: 16px;
+    font-weight:400;
+    color:rgb(106, 106, 106);
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }

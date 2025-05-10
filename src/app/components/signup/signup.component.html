@@ -1,0 +1,62 @@
+
+
+<div class="main">
+    <div class="container">
+
+     <div class="leftimg">
+       
+     </div>
+
+     <div class="right-content">
+      <form  (ngSubmit)="signup()">           
+           <!-- Right Side Form -->
+           <div class="login-form">
+             <mat-card-title>Sign up</mat-card-title>
+     
+             <mat-form-field class="example-full-width" color="primary">
+               <mat-label>Username</mat-label>
+               <input matInput placeholder="Enter Name" type="text" [(ngModel)]="username" name="name" required>
+             </mat-form-field>
+
+             <mat-form-field class="example-full-width" color="primary">
+                <mat-label>Phone</mat-label>
+                <input matInput placeholder="Enter Phone" type="text" [(ngModel)]="phone" name="phone" required>
+              </mat-form-field>
+     
+              <mat-form-field class="example-full-width" color="primary">
+                <mat-label>Date of Birth</mat-label>
+                <input matInput placeholder="Enter DOB" type="date" [(ngModel)]="DateOfBirth" name="DateOfBirth" required>
+              </mat-form-field>
+
+              
+              <mat-form-field class="example-full-width" color="primary">
+                <mat-label>Mail</mat-label>
+                <input matInput placeholder="Enter mail" type="email" [(ngModel)]="mail" name="mail" required>
+              </mat-form-field>
+
+             <mat-form-field class="example-full-width">
+               <mat-label>Password</mat-label>
+               <input matInput placeholder="Enter Password" type="password" [(ngModel)]="password" name="password" required>
+             </mat-form-field>
+
+
+             <mat-form-field class="example-full-width">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput placeholder="Enter Confirm Password" type="password" [(ngModel)]="confirm_password" name="confirm_password" required>
+              </mat-form-field>
+     
+             <button mat-raised-button color="primary" class="button" type="submit">Sign up</button>
+
+             <div class="footer-links">
+              <p>Already Member?</p>
+              <a href="#" class="signup-link" [routerLink]="['/']" class="signup"> Sign in </a>
+            </div>     
+             </div>
+       
+      </form>
+   </div>
+   </div>
+ </div>
+  
+
+

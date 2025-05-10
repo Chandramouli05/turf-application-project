@@ -1,0 +1,22 @@
+<div class="header">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="back" [routerLink]="['/client']">arrow_back</mat-icon>
+     <h1 class="greet">Book History</h1>
+</div>
+<div class="container">
+    
+    <div class="card-container" *ngFor="let book of books">
+        <mat-card appearance="outlined" class="card">
+            <mat-label class="turfName">{{book.turfname}}</mat-label>
+            <p class="book-contents">You've played {{book.sport}} at {{book.turfname}} on {{book.slot}}</p>
+
+            <div class="location">
+                <p>{{book.location}}</p>
+                <p>{{book.date}}</p>
+            </div>
+          
+         </mat-card>
+
+         
+    </div>
+
+</div>

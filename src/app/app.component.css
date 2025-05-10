@@ -1,0 +1,33 @@
+.navbar-brand{
+    font-weight:bold;
+}
+.bg{
+    background-color:rgb(15, 20, 15);
+}
+
+.bi-box-arrow-right{
+    color: #fff;
+}
+
+.right-side{
+    display:flex;
+    gap:16px;
+}
+
+mat-toolbar{
+    display:flex;
+    justify-content:space-between
+}
+
+.header{
+    background-color:rgb(9, 42, 10);
+    position:sticky;
+}
+
+mat-icon{
+    color:white;
+}
+
+mat-toolbar{
+    position:sticky;
+}

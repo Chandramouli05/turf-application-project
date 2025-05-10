@@ -1,0 +1,78 @@
+<!-- <a href="#" [routerLink]="['/client']">Back</a> -->
+
+<div class="header">
+  <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="back" [routerLink]="['/client']">arrow_back</mat-icon>
+  <div class="book-head">
+    <h1 class="greet">Hi !! Welcome to </h1>
+   <h1 class="turfname"> {{turfname}}</h1>
+  </div>
+  
+</div>
+
+
+<div class="container-box">
+  <div class="container mt-4">
+    <div class="leftimg">
+      <video autoplay muted loop>
+        <source src="../../../assets/img/turf-video.mp4" type="video/mp4" />
+      </video>
+    </div>
+  
+    <div class="right-content">
+      <form (ngSubmit)="bookTurf()">
+        <div class="form">
+          <mat-form-field appearance="fill" *ngIf="user">
+            <mat-label >Username</mat-label>
+            <input matInput type="text" id="username" [(ngModel)]="username" name="username" readonly />
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Contact Number</mat-label>
+            <input matInput type="tel" id="contact" [(ngModel)]="contact" name="phone" required pattern="[0-9]{10}" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Total Members</mat-label>
+            <input matInput type="text" id="total" [(ngModel)]="total" name="total" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Sports</mat-label>
+            <mat-select id="sport" [(ngModel)]="sport" name="sport" (selectionChange)="onSportChange()" required>
+              <mat-option value="cricket">Cricket</mat-option>
+              <mat-option value="badmiton">Badminton</mat-option>
+              <mat-option value="football">Football</mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Turf Name</mat-label>
+            <input matInput type="text" id="turfname" [(ngModel)]="turfname" name="turfname" [value]="turfname" readonly />
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Date</mat-label>
+            <input matInput type="date" id="checkIn" [(ngModel)]="date" name="date" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Time Slot</mat-label>
+            <mat-select id="time" [(ngModel)]="time" name="time" required>
+              <mat-option value="9 AM - 12 PM">9 AM - 12 PM</mat-option>
+              <mat-option value="1 PM - 3 PM">1 PM - 3 PM</mat-option>
+              <mat-option value="5 PM - 7 PM">5 PM - 7 PM</mat-option>
+              <mat-option value="9 PM - 12 AM">9 PM - 12 AM</mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Price</mat-label>
+            <input matInput type="text" id="price" [(ngModel)]="price" name="price" readonly />
+          </mat-form-field>
+  
+          <button mat-flat-button type="submit" class="btngreen">Book Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

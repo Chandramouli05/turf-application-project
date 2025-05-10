@@ -1,0 +1,71 @@
+.main{
+    display:flex;
+    padding:4rem;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background-color:rgb(255, 255, 255);
+    width:75%;
+    display:flex;
+    justify-content:space-between;
+    border-radius:6px;
+    height:700px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+   
+
+}
+
+.leftimg{
+    width:50%;
+    border-radius:6px 0 0 6px;
+    background-image: url("../../../assets/img/turf-img.jpg");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+.login-form{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+
+}
+
+
+.right-content{
+    width:45%;
+    padding: 2rem;
+    display:grid;
+    align-items:center;
+}
+
+.button{
+    background-color: #169c19;
+    color: #fff;
+}
+
+.signup-link{
+    text-decoration:none;
+    font-size: 16px;
+}
+
+.signup{
+    font-size:20px;
+    font-weight: medium;
+    color: #169c19;
+    text-decoration:none
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin: 10px 0;
+    gap: 16px;
+}
+
+.footer-links p{
+    font-size:16px;
+}

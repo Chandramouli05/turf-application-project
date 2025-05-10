@@ -1,0 +1,52 @@
+
+
+<div class="main">
+     <div class="container">
+
+      <div class="leftimg">
+        
+      </div>
+
+      <div class="right-content">
+       <form  (ngSubmit)="login()">           
+            <!-- Right Side Form -->
+            <div class="login-form">
+              <mat-card-title>Login</mat-card-title>
+      
+              <mat-form-field class="example-full-width" color="primary">
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Enter Username" type="text" [(ngModel)]="username" name="username" required>
+              </mat-form-field>
+      
+              <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Enter Password" type="password" [(ngModel)]="password" name="password" required>
+              </mat-form-field>
+      
+              <button mat-raised-button color="primary" class="button" type="submit">Login</button>
+
+              <div class="footer-links">
+                <p>Don't Have an Account?</p>
+                <a href="#" class="signup-link" [routerLink]="['/signup']" class="signup"> Sign up </a>
+              </div>
+            
+                
+              </div>
+        
+       </form>
+    </div>
+    </div>
+  </div>
+   
+ 
+
+
+      <!-- <div class="mb-3">
+          <label>Username</label>
+          <input type="text" class="form-control" [(ngModel)]="username" name="username" required />
+        </div> -->
+
+         <!-- <div class="mb-3">
+          <label>Password</label>
+          <input type="password" class="form-control" [(ngModel)]="password" name="password" required />
+        </div> -->

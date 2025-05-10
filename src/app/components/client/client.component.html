@@ -1,0 +1,66 @@
+<div class="label" *ngIf="currentUser" >
+  <mat-label class="welcome-text">Welcome, {{currentUser.username}}!</mat-label>
+  
+  <div class="card-group">
+    <mat-card class="msg-card" appearance="outlined">
+      <div class="msg-info">
+        <p class="fs-1">Your next cricket slot at</p>
+        <p class="fs-2">Tomorrow 9 AM</p>
+        <p class="fs-3">Don't forget to Pad up!! 🏏</p>
+      </div>
+      <div class="msg-icon">
+        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+          <mat-icon> location_on</mat-icon> Turf Arena, Anna Nagar
+        </button>
+      </div>
+      
+    </mat-card>
+    <mat-card class="msg-card-1" appearance="outlined">
+      <div class="msg-info">
+        <p class="fs-1">Weekend Sports Blast!</p>
+        <p class="fs-2">20% OFF </p>
+        <p class="fs-3">bookings made for Saturday or Sunday🏃‍♂️‍➡️⚽</p>
+      </div>
+      <div class="msg-icon">
+        <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+          <mat-icon> location_on</mat-icon> Turf Arena, Anna Nagar
+        </button>
+      </div>
+      
+    </mat-card>
+  </div>
+  
+</div>
+
+
+<div class="label">
+  <mat-label>Available Turfs</mat-label>
+</div>
+
+<div class="container">
+
+    <div class="card-container" *ngFor="let turf of turfs">
+    <mat-card>
+      <mat-label class="turfName">{{turf.name}}</mat-label>
+      <div class="turf-img">
+        
+      </div>
+
+      <div class="detail">
+      <a href="https://www.google.com/" target="_blank" class="location" color="primary">{{turf.location}}</a>
+  
+      <p class="desc">{{turf.description}}</p>
+
+      <div class="matIcon">
+        <button mat-icon-button><mat-icon>location_on</mat-icon></button>
+        <button mat-icon-button><mat-icon>phone</mat-icon></button>
+      </div>
+ 
+
+      <button mat-flat-button class="btngreen" [routerLink]="['/booking', turf.name]" >Book Now</button>
+    </div>
+    </mat-card>
+  </div>
+
+
+  </div>
